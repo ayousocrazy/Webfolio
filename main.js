@@ -4,9 +4,9 @@ let isOn = true;
 
 bulb.addEventListener("click", () => {
     if (isOn) {
-        bulb.src = "./off_logo.svg";
+        bulb.src = "./off.svg";
     } else {
-        bulb.src = "./on_logo.svg";
+        bulb.src = "./on.svg";
     }
     isOn = !isOn;
 });
