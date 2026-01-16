@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webfolio | ayousocrazy</title>
 
-    <link rel="icon" type="image/png" href="./favicon.svg">
+    <link rel="icon" type="image/png" href="./images/favicon.svg">
+
+    <link rel="stylesheet" href="./home.css">
 </head>
 
 <body>
-    <img src="./logo.svg" alt="Bulb" height="60px" />
-    <img id="bulb" src="./on.svg" alt="Bulb" height="60px" style="cursor: pointer;" />
+    <img src="./images/logo.svg" alt="Bulb" height="50px" style="position: absolute; left: 30px;" />
+    <img id="bulb" src="./images/on.svg" alt="Bulb" height="50px" style="cursor: pointer; position: absolute; right: 30px;" />
+
+    <div class="avatar-container" id="avatar">
+        <img src="./images/awake.svg" alt="Avatar" id="avatarImg">
+        <img src="./images/eyes.svg" alt="Eyes" id="eyes">
+    </div>
 
     <script src="./main.js"></script>
 </body>
