@@ -2,6 +2,7 @@ const bulb = document.getElementById("bulb");
 const avatarImg = document.getElementById("avatarImg");
 const eyes = document.getElementById("eyes");
 const avatar = document.getElementById("avatar");
+const root = document.documentElement;
 
 let isOn = true;
 
@@ -10,10 +11,14 @@ bulb.addEventListener("click", () => {
     bulb.src = "./images/off.svg";
     avatarImg.src = "./images/asleep.svg";
     eyes.style.display = "none";
+
+    root.style.setProperty("--primary-bg", "#F3F6FB");
   } else {
     bulb.src = "./images/on.svg";
     avatarImg.src = "./images/awake.svg";
     eyes.style.display = "inline";
+
+    root.style.setProperty("--primary-bg", "#FFF6E1");
   }
   isOn = !isOn;
 });
